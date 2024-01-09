@@ -1,0 +1,6 @@
+@ALab4_HostAddress = http://localhost:5204
+
+GET {{ALab4_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
