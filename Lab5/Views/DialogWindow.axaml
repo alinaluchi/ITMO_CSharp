@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:ALab5.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ALab5.Views.DialogWindow"
+        x:DataType="viewModels:DialogViewModel"
+        Title="DialogWindow" Width="420" Height="270">
+    <StackPanel>
+        <Label HorizontalAlignment="Center">Input the word like this "пре-пре-[корень]-суф-суф-кон"</Label>
+        <TextBox Text="{Binding InputWord}" Width="200" Height="100" Margin="0 10 0 0 " Name="InputTextBox"></TextBox>
+        
+        <Button BorderThickness="2" BorderBrush="BlueViolet" Width="200" Height="100" Margin="10" Command="{Binding AddWord}"
+                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Name="OkButton">OK</Button>
+    </StackPanel>
+</Window>
